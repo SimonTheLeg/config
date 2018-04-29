@@ -1,0 +1,20 @@
+{
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "extensions.ignoreRecommendations": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "explorer.confirmDragAndDrop": false,
+    "workbench.iconTheme": "vscode-great-icons",
+    "python.disablePromptForFeatures": [
+        "pylint"
+    ],
+    "files.autoSave": "afterDelay",
+    "explorer.confirmDelete": false,
+    "window.zoomLevel": 0,
+
+    "files.associations": {
+        "*.ignore": "gitignore"
+    },
+    "workbench.statusBar.feedback.visible": false,
+    "workbench.colorTheme": "Visual Studio Dark",
+    "terminal.integrated.fontFamily": "Meslo LG M for Powerline"
+}
