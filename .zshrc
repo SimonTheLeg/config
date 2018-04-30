@@ -64,6 +64,8 @@ DEFAULT_USER="simonbein"
 plugins=(
   git
   zsh-autosuggestions
+  docker
+  gitfast
 )
 
 source $ZSH/oh-my-zsh.sh
