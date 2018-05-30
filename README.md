@@ -28,7 +28,9 @@ rm -rf fonts
 
 ## 3. Set up iTerm profile (itermconfig.json)
 
+```txt
 iTerm -> Preferences -> General -> Preferences (bottom) and check *Load preferences from a custom folder or URL* and point it to this git repository
+```
 
 ## 4. Set up .zsh config
 
@@ -59,3 +61,27 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git /usr/local/share/
 ```shell
 curl --create-dirs -o /usr/local/opt/kube-ps1.sh https://raw.githubusercontent.com/jonmosco/kube-ps1/master/kube-ps1.sh
 ```
+
+## 7. Sync VS-Code Plugins and Settings
+
+Create a new Github account token
+
+```txt
+Github.com -> Settings -> Developer Settings -> Personal access token
+
+Make sure the gist permission is set
+```
+
+Install *code-settings-sync* extension from 
+
+```txt
+https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync
+```
+
+Launch the extension
+
+```txt
+VSCode -> Sync: Download Settings
+```
+
+Enter the token in the dialogue field
