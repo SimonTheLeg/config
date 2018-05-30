@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/simonbein/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -100,11 +100,11 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Enable Syntax highlighting
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+[ -f /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Enable the kube-ps1 (https://github.com/jonmosco/kube-ps1) extension
-source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
-PROMPT='$(kube_ps1)'$PROMPT
-KUBE_PS1_SYMBOL_ENABLE="false"
-KUBE_PS1_NS_COLOR="green"
+[ -f /usr/local/opt/kube-ps1/share/kube-ps1.sh ] && source "/usr/local/opt/kube-ps1/share/kube-ps1.sh" && \
+PROMPT='$(kube_ps1)'$PROMPT && \
+KUBE_PS1_SYMBOL_ENABLE="false" && \
+KUBE_PS1_NS_COLOR="green" && \
 KUBE_PS1_CTX_COLOR="blue"
