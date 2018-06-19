@@ -37,32 +37,36 @@ iTerm -> Preferences -> General -> Preferences (bottom) and check *Load preferen
 Link -zshrc config file
 
 ```shell
-ln -sf .zshrc ~/.zshrc
+ln -sf <absolute path to file in git> <absolute path to ~/.zshrc>
 ```
 
-## 5. Set up zsh auto-complete
+## 5. Set up zsh auto-suggestions
 
 (from <https://github.com/zsh-users/zsh-autosuggestions>)
 
-a)
-
 ```shell
-brew install zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
-b)
+## 6. Set up zsh syntax highlighting
 
 ```shell
-git clone https://github.com/zsh-users/zsh-autosuggestions.git /usr/local/share/zsh-syntax-highlighting
+brew install zsh-syntax-highlighting
 ```
 
-## 6. Set up kube-ps1
+## 7. Set up kube-ps1
 
 ```shell
-curl --create-dirs -o /usr/local/opt/kube-ps1.sh https://raw.githubusercontent.com/jonmosco/kube-ps1/master/kube-ps1.sh
+curl --create-dirs -o /usr/local/opt/kube-ps1/share/kube-ps1.sh https://raw.githubusercontent.com/jonmosco/kube-ps1/master/kube-ps1.sh
 ```
 
-## 7. Sync VS-Code Plugins and Settings
+## 8. Set up gs and git lg commands
+
+```shell
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+```
+
+## 9. Sync VS-Code Plugins and Settings
 
 Create a new Github account token
 
