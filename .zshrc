@@ -111,3 +111,4 @@ KUBE_PS1_CTX_COLOR="blue"
 
 # Set up gs as alias for 'git status'
 alias gs='git status'
+alias kc='kubectl'
