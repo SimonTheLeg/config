@@ -66,6 +66,7 @@ plugins=(
   zsh-autosuggestions
   docker
   gitfast
+  git-open
 )
 
 source $ZSH/oh-my-zsh.sh

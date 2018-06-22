@@ -40,7 +40,9 @@ Link -zshrc config file
 ln -sf <absolute path to file in git> <absolute path to ~/.zshrc>
 ```
 
-## 5. Set up zsh auto-suggestions
+## 5. Set up zsh plugins
+
+### zsh autosuggestion
 
 (from <https://github.com/zsh-users/zsh-autosuggestions>)
 
@@ -48,25 +50,31 @@ ln -sf <absolute path to file in git> <absolute path to ~/.zshrc>
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
-## 6. Set up zsh syntax highlighting
+### zsh syntax highlighting
 
 ```shell
 brew install zsh-syntax-highlighting
 ```
 
-## 7. Set up kube-ps1
+### kube-ps1
 
 ```shell
 curl --create-dirs -o /usr/local/opt/kube-ps1/share/kube-ps1.sh https://raw.githubusercontent.com/jonmosco/kube-ps1/master/kube-ps1.sh
 ```
 
-## 8. Set up gs and git lg commands
+### git open
+
+```shell
+git clone https://github.com/paulirish/git-open.git $ZSH_CUSTOM/plugins/git-open
+```
+
+## 6. Set up gs and git lg commands
 
 ```shell
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 ```
 
-## 9. Sync VS-Code Plugins and Settings
+## 7. Sync VS-Code Plugins and Settings
 
 Create a new Github account token
 
