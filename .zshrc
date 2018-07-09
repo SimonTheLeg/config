@@ -20,6 +20,7 @@ DEFAULT_USER="simonbein"
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
+
 # CASE_SENSITIVE="true"
 
 # Uncomment the following line to use hyphen-insensitive completion. Case
@@ -67,6 +68,7 @@ plugins=(
   docker
   gitfast
   git-open
+  terraform
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -113,3 +115,10 @@ KUBE_PS1_CTX_COLOR="blue"
 # Set up gs as alias for 'git status'
 alias gs='git status'
 alias kc='kubectl'
+[[ -s "/Users/simonbein/.gvm/scripts/gvm" ]] && source "/Users/simonbein/.gvm/scripts/gvm"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/simonbein/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/simonbein/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/simonbein/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/simonbein/google-cloud-sdk/completion.zsh.inc'; fi
