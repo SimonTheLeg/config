@@ -68,10 +68,15 @@ curl --create-dirs -o /usr/local/opt/kube-ps1/share/kube-ps1.sh https://raw.gith
 git clone https://github.com/paulirish/git-open.git $ZSH_CUSTOM/plugins/git-open
 ```
 
-## 6. Set up gs and git lg commands
+## 6. Set up gs, git lg commands and diff-so-fancy
 
 ```shell
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+```
+
+```shell
+brew install diff-so-fancy
+git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 ```
 
 ## 7. Sync VS-Code Plugins and Settings
